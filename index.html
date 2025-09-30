@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>F1 Pilotos 2025</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header> 
+    <nav>
+      <h1 class="logo">F1 Pilotos </h1>
+      <ul class="menu">
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#drivers">Pilotos</a></li>
+        <li><a href="#meetings">Meetings</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero con GIF -->
+  <section id="home" class="hero">
+    <h2>Fórmula 1</h2>
+    <p>Consulta la lista de pilotos y eventos más recientes.</p>
+    <button id="loadDrivers" class="btn-primary">Cargar Pilotos</button>
+  </section>
+
+  <!-- Pilotos -->
+  <section id="drivers" class="drivers">
+    <h2>Pilotos </h2>
+    <div id="driversContainer" class="cards"></div>
+  </section>
+
+  <!-- Meetings -->
+  <section id="meetings" class="meetings">
+    <h2>Eventos / Meetings</h2>
+    <button id="loadMeetings" class="btn-secondary">📅 Cargar Meetings</button>
+    <div id="meetingsContainer" class="cards"></div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="contact">
+    <h2>Contáctanos</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Tu nombre" required>
+      <input type="email" id="email" placeholder="Tu correo" required>
+      <textarea id="message" placeholder="Tu mensaje"></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+    </form>
+    <p id="formMsg"></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 F1 Open Data</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
